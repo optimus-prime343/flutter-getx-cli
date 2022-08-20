@@ -2,25 +2,32 @@ name: flutter_get_cli_demo
 version: 1.0.0+1
 publish_to: none
 description: A new Flutter project.
-environment: 
+environment:
   sdk: '>=2.17.6 <3.0.0'
 
-dependencies: 
+dependencies:
   cupertino_icons: ^1.0.2
   get: 4.6.5
   flutter_svg: 1.1.4
   dio: 4.0.6
-  flutter: 
+  flutter_launcher_icons: 0.10.0
+  flutter:
     sdk: flutter
 
-dev_dependencies: 
+dev_dependencies:
   flutter_lints: ^2.0.0
   lints: 2.0.0
-  flutter_test: 
+  flutter_test:
     sdk: flutter
 
-flutter: 
-  assets: 
+flutter:
+  assets:
     - assets/images/
   uses-material-design: true
 
+flutter_icons:
+  android: 'launcher_icon'
+  ios: true
+  remove_alpha_ios: true
+  image_path: 'assets/images/cipher_logo.png'
+  min_sdk_android: 21
